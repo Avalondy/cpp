@@ -18,7 +18,7 @@ point operator+ (point& p1, point& p2){
 }
 
 ostream& operator<< (ostream& out, const point& p){
-    out << "(" << p.x << ", " << p.y << ")";
+    out << "(" << p.getx() << ", " << p.gety() << ")";
     return out;
 }
 

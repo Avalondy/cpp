@@ -12,6 +12,8 @@ int main(){
     cout << "Template for sum()" <<endl;
     int a[] = {1,2,3};
     double b[] = {2.1,2.2,2.3};
+    string c = {'a', 'b', 'c'};
     cout << sum(a,3) << endl;
     cout << sum(b,3) << endl;
+    cout << sum(c,3) << endl;
 }

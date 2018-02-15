@@ -5,6 +5,7 @@ class point{
     public:
         double getx(){return x;}
         double gety(){return y;}
+        point(double x=0, double y=0):x(x), y(y){}
         void setx(double v){x = v;}
         void sety(double v){y = v;}
     //private:
