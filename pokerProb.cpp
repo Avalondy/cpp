@@ -6,7 +6,7 @@
 
 using namespace std;
 
-enum suit: short{SPADE, HEART, DIAMOND, CLUB};
+enum class suit: short{SPADE, HEART, DIAMOND, CLUB};
 
 class pips{
     public:
@@ -36,10 +36,10 @@ ostream& operator<<(ostream& out, const pips& p){
 
 ostream& operator<<(ostream& out, const suit& s){
     switch (s){
-        case SPADE:     out << "Spade"; break;
-        case HEART:     out << "Heart"; break;
-        case DIAMOND:   out << "Diamond"; break;
-        case CLUB:      out << "Club"; break;
+        case suit::SPADE:     out << "Spade"; break;
+        case suit::HEART:     out << "Heart"; break;
+        case suit::DIAMOND:   out << "Diamond"; break;
+        case suit::CLUB:      out << "Club"; break;
     }
     return out;
 }
